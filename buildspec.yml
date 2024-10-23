@@ -15,7 +15,7 @@ phases:
       - chmod +x test.sh
       - chmod +x input.txt
       - ls -l
-      - zip -r input.txt output.zip
+      - cp input.txt copy_of_file.txt
 
 artifacts:
   files:
