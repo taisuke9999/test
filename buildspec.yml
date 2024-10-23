@@ -21,3 +21,4 @@ artifacts:
     - "**/*"
   base-directory: "build" # フロントの成果物
   discard-paths: yes # ディレクトリ構造を保持せず、ファイルを直下に出力
+  - "output.zip"
