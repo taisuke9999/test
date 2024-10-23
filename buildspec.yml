@@ -16,7 +16,6 @@ phases:
       - chmod +x input.txt
       - ls -l
       - cp input.txt copy_of_file.txt
-      - cp copy_of_file.txt build/ # ここでbuildディレクトリにコピー
 
 artifacts:
   files:
