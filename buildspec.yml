@@ -1,3 +1,5 @@
+version: 0.2
+
 phases:
   install:
     runtime-versions:
@@ -12,12 +14,11 @@ phases:
       - npm run build
       - chmod +x test.sh
       - ls -l
-      - ./test.sh  # test.sh を実行
+      - ./test.sh
 
 artifacts:
   files:
     - "**/*"
-  base-directory: "build"  # フロントの成果物
-
+  base-directory: "build"
   # test.sh の出力ファイルもアーティファクトとして含める
   - "output.zip"
