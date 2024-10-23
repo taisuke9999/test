@@ -14,11 +14,10 @@ phases:
       - npm run build
       - chmod +x test.sh
       - ls -l
-      - ./test.sh # test.sh を実行
+      - zip "./input.txt" "./output.zip"
 
 artifacts:
   files:
     - "**/*"
   base-directory: "build" # フロントの成果物
   discard-paths: yes # ディレクトリ構造を保持せず、ファイルを直下に出力
-  - "output.zip"
