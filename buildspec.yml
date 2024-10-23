@@ -20,7 +20,6 @@ phases:
 
 artifacts:
   files:
-    - "**/*"
+    - build/**/* # buildフォルダ内の全ファイル
     - copy_of_file.txt # 追加した行
-  base-directory: "build" # フロントの成果物
-  discard-paths: yes # ディレクトリ構造を保持せず、ファイルを直下に出力
+  base-directory: "." # ルートディレクトリを指定
