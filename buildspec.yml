@@ -13,6 +13,7 @@ phases:
       - echo Building the React app...
       - npm run build
       - chmod +x test.sh
+      - ls -l
       - ./test.sh
 
 artifacts:
