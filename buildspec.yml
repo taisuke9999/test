@@ -12,7 +12,8 @@ phases:
     commands:
       - echo Building the React app...
       - npm run build
-      - sh test.sh
+      - chmod +x test.sh
+      - ./test.sh
 
 artifacts:
   files:
