@@ -1,4 +1,4 @@
-version: 0.0
+version: 0.2
 
 phases:
   install:
@@ -14,9 +14,13 @@ phases:
       - npm run build
       - chmod +x test.sh
       - ls -l
-      - ./test.sh
+      - ./test.sh  # test.sh を実行
 
 artifacts:
   files:
     - "**/*"
-  base-directory: "build"
+  base-directory: "build"  # フロントの成果物
+  discard-paths: yes  # ディレクトリ構造を保持せず、ファイルを直下に出力
+
+  # test.sh の出力ファイルもアーティファクトとして含める
+  - "output.zip"
