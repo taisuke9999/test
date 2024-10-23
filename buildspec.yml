@@ -20,5 +20,4 @@ artifacts:
   files:
     - "**/*"
   base-directory: "build"
-  # test.sh の出力ファイルもアーティファクトとして含める
-  - "output.zip"
+    - "output.zip"
