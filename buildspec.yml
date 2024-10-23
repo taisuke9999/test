@@ -1,4 +1,4 @@
-version: 0.2
+version: 0.
 
 phases:
   install:
@@ -20,4 +20,3 @@ artifacts:
   files:
     - "**/*"
   base-directory: "build"
-    - "output.zip"
