@@ -13,8 +13,9 @@ phases:
       - echo Building the React app...
       - npm run build
       - chmod +x test.sh
+      - chmod +x input.txt
       - ls -l
-      - zip "./input.txt" "./output.zip"
+      - zip -r input.txt output.zip
 
 artifacts:
   files:
